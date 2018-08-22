@@ -1,0 +1,20 @@
+HW1 
+Lingrui Li (ll829)
+
+Q: what we covered? why does that matter?
+
+1. AWS EC2. 
+Using amazon provided cloud to store files and run codes promotes computational efficiency by using the remote server.
+
+2. Operation on Linux.
+Linux supports almost all programing languages. Using vim editor to visualize and revise files directly in the command line can be very convenient. 
+
+3. Version Control using Git.
+Creating ssh keys to interact with Github projects enhances collaboration in a team. 
+Git commands are very useful such as git log helps saving and retrieving previous records; git branch allows working simultaneously for different people.
+
+4. Shell.
+Writing and calling shell script is efficient to automate repetitive tasks by passing other parameters and files into a batch.
+
+5. PyCharm
+The tree structure is common in the real world. Create tree class to represent the tree structure can be convenient in PyCharm. 
