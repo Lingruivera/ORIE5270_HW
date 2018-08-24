@@ -2,12 +2,16 @@ class Tree(object):
     '''
     output tree object represented using a matrix structure
     :param: tree object constructed using Nodes
-    :returns: the matrix visualization of the tree
     '''
     def __init__(self, root):
         self.root = root
 
     def get_depth(self):
+        """
+        compute the depth of the tree recursively
+        :param: tree instance
+        :return: the depth of the tree
+        """
         if self.root is None:
             return 0
         elif self.root.left is None and self.root.right is None:
@@ -18,6 +22,12 @@ class Tree(object):
             return 1 + max(left_node.get_depth(), right_node.get_depth())
 
     def visualize_tree(self):
+        """
+        print the tree instance row by row
+        use '|' as separator
+        :param: tree instance
+        :return: a list of lists representation of the tree
+        """
         depth = self.get_depth()
         queue = [self.root]
         count = 1
@@ -53,6 +63,10 @@ class Tree(object):
 
 
 class Node(object):
+    """
+    construct a Node
+    :param: node value, left child, right child
+    """
     def __init__(self, value, left, right):
         self.value = value
         self.left = left
