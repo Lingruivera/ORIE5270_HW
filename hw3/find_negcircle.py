@@ -1,5 +1,4 @@
 import itertools
-import heapq
 
 def Bellman_Ford(file_name):
     data = []
