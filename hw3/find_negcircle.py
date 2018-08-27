@@ -61,7 +61,7 @@ def Bellman_Ford(file_name):
             for j in path[1:]:
                 if j != path[0]:
                     negcircle.append(j)
-            print "find negative circle", negcircle
+            print negcircle
             break
 
 if __name__ == '__main__':
