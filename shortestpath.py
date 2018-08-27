@@ -6,7 +6,7 @@ def find_shortestpath(file_name, source, destination):
     data = []
     with open(file_name) as f:
         for line1, line2 in itertools.izip_longest(*[f] * 2):
-            data.append((line1.replace("\n", "") + "," + line2.replace("\n", "")))  # .split())
+            data.append((line1.replace("\n", "") + "," + line2.replace("\n", "")))
 
     graph = {}
     for i in range(len(data)):
