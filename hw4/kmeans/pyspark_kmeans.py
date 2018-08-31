@@ -8,7 +8,7 @@ def pyspark_kmeans(datafile, initial_centroids):
     """
     find centroids for data points using 100 iterations
     :param datafile: n-dimension data points
-    :param initial_centroids: initial centroids for
+    :param initial_centroids: initial centroids
     :return: list of centroid arrays
     """
     data = sc.textFile(datafile).map(lambda line: np.array([float(x) for x in line.split(' ')])).cache()
