@@ -6,10 +6,10 @@ from numpy import linalg as LA
 
 def pyspark_kmeans(datafile, initial_centroids):
     """
-    find centroids for data points with 10 clusters using 100 iterations
+    find centroids for data points using 100 iterations
     :param datafile: n-dimension data points
     :param initial_centroids: initial centroids for
-    :return: 10 centroids
+    :return: list of centroid arrays
     """
     data = sc.textFile(datafile).map(lambda line: np.array([float(x) for x in line.split(' ')])).cache()
     centroid = sc.textFile(initial_centroids).map(lambda line: np.array([float(x) for x in line.split(' ')])).collect()
